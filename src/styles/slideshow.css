@@ -1,0 +1,64 @@
+.slide-container {
+  width: 100%;
+  margin: auto;
+}
+
+.each-fade .image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+  height: 88vh;
+  opacity: 1;
+}
+
+.content{
+    width: 70%;
+    position: absolute;
+    top: 10vh;
+    margin-left: 5%;
+}
+
+.each-fade h2 {
+  justify-content: center;
+  color:white;
+  font-size:6vw;
+  text-transform: uppercase;
+  font-family: 'Arial';
+  font-weight: bolder;
+}
+
+.content p{
+    color:white;
+    font-size:4vh;
+    font-family: 'Lucida Sans';
+}
+
+.content button{
+    background: none;
+    border:2px solid white;
+    color: white;
+    font-variant: small-caps;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:5px; 
+}
+
+.content span{
+    display: inline-block;
+    padding:  5px 10px;
+    margin-right: 10px;
+    border-right: 2px solid white;
+}
+
+.content i{
+    position: relative;
+    top: 3px; 
+}
+
+.content button:hover i{
+    transform: translate(5px);
+    transition: transform 500ms;
+}
