@@ -8,19 +8,54 @@ import img3 from "../images/services3.jpg";
 import img4 from "../images/services4.jpg";
 import img5 from "../images/services5.jpg";
 import img6 from "../images/services6.jpg";
+import { Grid } from 'semantic-ui-react'
 
 export default class Services extends Component {
   render() {
     return (
       <div className="services">
         <h1>Our Services</h1>
+        <Grid className="services-row">
           <ServiceItem
-          position='left'
+            position='right'
             image={img1}
             header="photography"
             content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
           />
+          <ServiceItem
+            position='left'
+            image={img2}
+            header="Decor services"
+            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
+          />
+          
+          <ServiceItem
+            position='right'
+            image={img4}
+            header="card printing"
+            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
+          />
 
+<ServiceItem
+            position='left'
+            image={img3}
+            header="Food and catering"
+            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
+          />
+          <ServiceItem
+            position='right'
+            image={img5}
+            header="lighting and sound"
+            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
+          />
+
+          <ServiceItem
+            position='left'
+            image={img6}
+            header="dance floor"
+            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
+          />
+        </Grid>
       </div>
     );
   }
