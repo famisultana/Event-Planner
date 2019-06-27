@@ -36,15 +36,6 @@
     font-family: 'Lucida Sans';
 }
 
-.content button{
-    background: none;
-    border:2px solid white;
-    color: white;
-    font-variant: small-caps;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius:5px; 
-}
 
 .content span{
     display: inline-block;
