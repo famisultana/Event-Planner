@@ -1,27 +1,23 @@
 import React, { Component } from 'react';
+import { Route, BrowserRouter } from 'react-router-dom';
 import Menu from './Menu';
-import About from './About';
 import Footer from './Footer';
-import Slideshow from './Slideshow';
-import Services from './Services';
-import Ribbon from './Ribbon'
-import ImageRibbon from './ImageRibbon'
+import Home from './Home';
+import Photography from './Photography';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        
-        <Menu />
-       <Slideshow/>
-        <About />
-        <Ribbon/>
-        
-
-     
-        <Services/>
-        <ImageRibbon />
-        <Footer/>
+      <div>
+        <BrowserRouter>
+          <div>
+          <Menu />
+            <Route path="/" exact component={Home} />
+            <Route path="/photography" exact component={Photography} />
+            <Footer />
+          </div>
+        </BrowserRouter>
       </div>
     );
   }
