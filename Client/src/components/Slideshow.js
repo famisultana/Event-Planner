@@ -11,7 +11,7 @@ const fadeProperties = {
   duration: 2000,
   transitionDuration: 1000,
   infinite: true,
-  indicators: true
+  indicators: false
 };
 
 export default class Slideshow extends Component {
