@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../styles/slideshow.css";
-import { Button } from 'react-bootstrap';
+import Button from './Button';
 
 export default class SlideshowItem extends Component {
   render() {
@@ -11,7 +11,7 @@ export default class SlideshowItem extends Component {
           <div className="content">
                     <h2>{this.props.header}</h2>
                     <p>{this.props.caption}</p>
-            <button variant="outline-info"><span>{this.props.button}</span><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>
+            <Button title={this.props.button}/>
           </div>
         </div>
       </div>

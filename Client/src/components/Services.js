@@ -14,39 +14,13 @@ export default class Services extends Component {
     return (
       <div className="services">
         <h1>Our Services</h1>
-        <Row className="services-row" justify-content-around>
           <ServiceItem
+          position='left'
             image={img1}
             header="photography"
             content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
           />
-          <ServiceItem
-            image={img2}
-            header="Decor services"
-            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
-          />
-          <ServiceItem
-            image={img3}
-            header="Food and catering"
-            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
-          />
-          <ServiceItem
-            image={img4}
-            header="card printing"
-            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
-          />
-          <ServiceItem
-            image={img5}
-            header="lighting and sound"
-            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
-          />
 
-          <ServiceItem
-            image={img6}
-            header="dance floor"
-            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
-          />
-        </Row>
       </div>
     );
   }
