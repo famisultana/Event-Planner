@@ -44,6 +44,7 @@ class Photography extends Component {
                         image={graduation}
                         header="graduation" />
                 </Grid>
+                <MainHeading text='Photography Packages'/>
             </div>
         );
     }

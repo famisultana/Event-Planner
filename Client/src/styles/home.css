@@ -103,7 +103,7 @@
 
 .footer-item{
 border-right:0.5px solid #a9a9a9;
-padding: 3s0px;
+padding: 30px;
 font-size: 18px;
 
 }
@@ -179,7 +179,7 @@ padding: 5px;
   margin: 10px;
   padding: 20px;
   text-transform: uppercase;
-  font-size: 55px;
+  font-size: 45px;
   color:#c5ac76;
 }
 
@@ -242,6 +242,7 @@ padding: 5px;
 .photography-section{
   display: flex;
   height: 88vh;
+  border-bottom:0.5px solid#77777747;
 }
 
 .photography-section .header-image{
