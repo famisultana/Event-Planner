@@ -9,12 +9,13 @@ import img4 from "../images/services4.jpg";
 import img5 from "../images/services5.jpg";
 import img6 from "../images/services6.jpg";
 import { Grid } from 'semantic-ui-react'
+import MainHeading from "./MainHeading";
 
 export default class Services extends Component {
   render() {
     return (
       <div className="services">
-        <h1>Our Services</h1>
+        <MainHeading text="Our Services"/>
         <Grid className="services-row">
           <ServiceItem
             position='right'

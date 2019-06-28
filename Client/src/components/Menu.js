@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Navbar, Nav} from "react-bootstrap";
 import logo from "../images/emlogo.png";
+import {Link} from 'react-router-dom';
 
 export default class Menu extends Component {
   render() {
@@ -31,9 +32,12 @@ export default class Menu extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" s />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link style={navLinks} href="#features">
+          <Link to="/">
+          <Nav.Link style={navLinks}>
               Home
             </Nav.Link>
+            </Link>
+            
             <Nav.Link style={navLinks} href="#pricing">
               About
             </Nav.Link>

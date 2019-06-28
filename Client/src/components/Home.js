@@ -4,6 +4,7 @@ import Slideshow from './Slideshow';
 import Services from './Services';
 import Ribbon from './Ribbon'
 import ImageRibbon from './ImageRibbon'
+import Footer from './Footer'
 
 class Home extends Component {
     render() {
@@ -14,7 +15,7 @@ class Home extends Component {
                 <Ribbon />
                 <Services />
                 <ImageRibbon />
-
+                <Footer />
             </div>
         );
     }
