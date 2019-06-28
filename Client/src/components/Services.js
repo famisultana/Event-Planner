@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import ServiceItem from "./ServiceItem";
-import { Row } from "react-bootstrap";
-import "../styles/home.css";
+import { Grid } from 'semantic-ui-react'
+import MainHeading from "./MainHeading";
 import img1 from "../images/services1.jpg";
 import img2 from "../images/services2.jpg";
 import img3 from "../images/services3.jpg";
 import img4 from "../images/services4.jpg";
 import img5 from "../images/services5.jpg";
 import img6 from "../images/services6.jpg";
-import { Grid } from 'semantic-ui-react'
-import MainHeading from "./MainHeading";
+
 
 export default class Services extends Component {
   render() {

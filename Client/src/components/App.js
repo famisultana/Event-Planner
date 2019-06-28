@@ -15,7 +15,7 @@ class App extends Component {
           <Menu />
             <Route path="/" exact component={Home} />
             <Route path="/photography" exact component={Photography} />
-            
+            <Footer />
           </div>
         </BrowserRouter>
       </div>

@@ -1,17 +1,8 @@
 import React, { Component } from 'react'
-import { Row, Col } from 'react-bootstrap'
-import { Grid, Image } from 'semantic-ui-react';
-import '../styles/home.css'
-import {Link} from 'react-router-dom';
-
-var key = 1;
+import { Grid} from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 export default class ServiceItem extends Component {
-
-  renderItem = () => {
-
-  }
-
 
   render() {
     if (this.props.position === 'right') {
@@ -22,8 +13,8 @@ export default class ServiceItem extends Component {
             <h2>{this.props.header}</h2>
             <p>{this.props.content}</p>
             <Link to="/photography">
-            <button>
-              View Details
+              <button>
+                View Details
         </button>
             </Link>
           </Grid.Column>
@@ -46,8 +37,8 @@ export default class ServiceItem extends Component {
             <h2>{this.props.header}</h2>
             <p>{this.props.content}</p>
             <Link to="/photography">
-            <button>
-              View Details
+              <button>
+                View Details
         </button>
             </Link>
           </Grid.Column>
