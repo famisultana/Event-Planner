@@ -6,8 +6,6 @@ import img1 from "../images/services1.jpg";
 import img2 from "../images/services2.jpg";
 import img3 from "../images/services3.jpg";
 import img4 from "../images/services4.jpg";
-import img5 from "../images/services5.jpg";
-import img6 from "../images/services6.jpg";
 
 
 export default class Services extends Component {
@@ -29,30 +27,18 @@ export default class Services extends Component {
             content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
           />
           
-          <ServiceItem
-            position='right'
-            image={img4}
-            header="card printing"
-            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
-          />
 
 <ServiceItem
-            position='left'
+            position='right'
             image={img3}
             header="Food and catering"
             content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
           />
-          <ServiceItem
-            position='right'
-            image={img5}
-            header="lighting and sound"
-            content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
-          />
 
           <ServiceItem
             position='left'
-            image={img6}
-            header="dance floor"
+            image={img4}
+            header="customized cakes"
             content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
           />
         </Grid>

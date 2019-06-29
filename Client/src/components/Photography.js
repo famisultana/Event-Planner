@@ -39,7 +39,7 @@ class Photography extends Component {
                         header="real estate" />
                     <PhotographyCategories
                         image={product}
-                        header="product" />
+                        header="products" />
                     <PhotographyCategories
                         image={graduation}
                         header="graduation" />
