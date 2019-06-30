@@ -9,9 +9,16 @@ import event from '../images/photography/event.jpg';
 import graduation from '../images/photography/graduation.jpg';
 import estate from '../images/photography/estate.jpg';
 import product from '../images/photography/products.jpg';
+import PhotographyPackage from './PhotographyPackage';
 
 class Photography extends Component {
+    constructor(props){
+        super(props);
+        this.list=['15 Pages Album',
+        '13 X 32 size for Portrait Shoot', '15 Pages Album', '13 X 32 size for Event Shoot'];
+    }
     render() {
+        
         return (
             <div>
                 <div className="photography-section">
@@ -44,7 +51,12 @@ class Photography extends Component {
                         image={graduation}
                         header="graduation" />
                 </Grid>
-                <MainHeading text='Photography Packages'/>
+                <MainHeading text='Photography Packages' />
+                <Grid className='category-row' columns={3}>
+                    <PhotographyPackage name='President Package' price='150,000' list={this.list}/>
+                    <PhotographyPackage name='President Package' price='150,000' list={this.list}/>
+                    <PhotographyPackage name='President Package' price='150,000' list={this.list}/>
+                </Grid>
             </div>
         );
     }
