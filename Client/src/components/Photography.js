@@ -11,12 +11,10 @@ import estate from '../images/photography/estate.jpg';
 import product from '../images/photography/products.jpg';
 import PhotographyPackage from './PhotographyPackage';
 
+
+const list=['15 Pages Album','13 X 32 size for Portrait Shoot', 'Unlimited Photo Coverage with Soft Copies','Digital Video Coverage with 2 Video Cameras'];
+
 class Photography extends Component {
-    constructor(props){
-        super(props);
-        this.list=['15 Pages Album',
-        '13 X 32 size for Portrait Shoot', '15 Pages Album', '13 X 32 size for Event Shoot'];
-    }
     render() {
         
         return (
@@ -53,9 +51,9 @@ class Photography extends Component {
                 </Grid>
                 <MainHeading text='Photography Packages' />
                 <Grid className='category-row' columns={3}>
-                    <PhotographyPackage name='President Package' price='150,000' list={this.list}/>
-                    <PhotographyPackage name='President Package' price='150,000' list={this.list}/>
-                    <PhotographyPackage name='President Package' price='150,000' list={this.list}/>
+                    <PhotographyPackage name='President Package' price='150,000' list={list}/>
+                    <PhotographyPackage name='President Package' price='150,000' list={list}/>
+                    <PhotographyPackage name='President Package' price='150,000' list={list}/>
                 </Grid>
             </div>
         );

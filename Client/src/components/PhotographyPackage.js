@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import { Grid, Button } from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
 
 class PhotographyPackage extends Component {
-    
-    renderList(){
-            return <li>abc</li>
-        }
-    
+
+    renderList() {
+        return this.props.list.map(item => {
+            return <li>{item}</li>
+        })
+    }
+
     render() {
         return (
             <Grid.Column className='package-item' mobile={15} tablet={15} computer={5}>
                 <h3 className='package-name'>{this.props.name}</h3>
-                <span className='package-price'>Rs. 
+                <span className='package-price'>Rs.
                     <span >{this.props.price}</span>
                     <h3>per day</h3>
                 </span>
