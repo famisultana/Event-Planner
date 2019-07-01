@@ -1,21 +1,22 @@
 import React, { Component } from "react";
-import { Navbar, Nav} from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import logo from "../images/emlogo.png";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default class Menu extends Component {
   render() {
     const navBar = {
       backgroundColor: "black",
       opacity: 0.9,
-      height: '12vh',
+      height: "12vh"
     };
 
     const navLinks = {
       fontVariant: "small-caps",
       fontSize: "20px",
       width: "100px",
-      color:'white'
+      color: "white"
     };
 
     return (
@@ -32,18 +33,27 @@ export default class Menu extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" s />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-          <Link to="/">
-          <Nav.Link style={navLinks}>
-              Home
-            </Nav.Link>
+            <Link to="/">
+              <Nav.Link style={navLinks}>Home</Nav.Link>
             </Link>
-            
+
             <Nav.Link style={navLinks} href="#pricing">
               About
             </Nav.Link>
-            <Nav.Link style={navLinks} href="#features">
-              Services
-            </Nav.Link>
+            {/* link tag will scroll it down to the section given name id */}
+            <ScrollLink
+              activeClass="active"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={800}
+            >
+              <Nav.Link style={navLinks} href="#features">
+                Services
+              </Nav.Link>
+            </ScrollLink>
+
             <Nav.Link style={navLinks} href="#pricing">
               Contact
             </Nav.Link>
