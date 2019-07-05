@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import About from './About';
+import Info from './Info';
 import Slideshow from './Slideshow';
 import Services from './Services';
 import Ribbon from './Ribbon'
@@ -10,7 +10,7 @@ class Home extends Component {
         return (
             <div>
                 <Slideshow />
-                <About />
+                <Info />
                 <Ribbon />
                 <Services />
                 <ImageRibbon />

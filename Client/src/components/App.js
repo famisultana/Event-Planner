@@ -4,6 +4,9 @@ import Menu from './Menu';
 import Footer from './Footer';
 import Home from './Home';
 import Photography from './Photography';
+import Decor from './Decor';
+import FoodCatering from './FoodCatering';
+import Cakes from './Cakes';
 
 
 class App extends Component {
@@ -15,6 +18,9 @@ class App extends Component {
           <Menu />
             <Route path="/" exact component={Home} />
             <Route path="/photography" exact component={Photography} />
+            <Route path="/decor" exact component={Decor} />
+            <Route path="/foodandcatering" exact component={FoodCatering} />
+            <Route path="/customizedcakes" exact component={Cakes} />
             <Footer />
           </div>
         </BrowserRouter>

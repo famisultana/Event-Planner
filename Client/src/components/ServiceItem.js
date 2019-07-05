@@ -12,7 +12,7 @@ export default class ServiceItem extends Component {
           <Grid.Column className='service-item service-info' mobile={16} computer={7}>
             <h2>{this.props.header}</h2>
             <p>{this.props.content}</p>
-            <Link to="/photography">
+            <Link to={this.props.link}>
               <button>
                 View Details
         </button>

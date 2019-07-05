@@ -18,19 +18,22 @@ export default class Services extends Component {
             image={img1}
             header="photography"
             content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
+            link='/photography'
           />
           <ServiceItem
             position="left"
             image={img2}
             header="Decor services"
             content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
-          />
+            link='/decor'
+         />
 
           <ServiceItem
             position="right"
             image={img3}
             header="Food and catering"
             content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
+            link='/foodandcatering'
           />
 
           <ServiceItem
@@ -38,6 +41,7 @@ export default class Services extends Component {
             image={img4}
             header="customized cakes"
             content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
+            link='/customizedcakes'
           />
         </Grid>
       </div>
