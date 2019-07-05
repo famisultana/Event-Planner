@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Container, Col, Row, Image } from "react-bootstrap";
 import logo from "../images/emlogo2.png";
 import "../styles/home.css";
-import Ribbon from "./Ribbon";
-import ImageRibbon from "./ImageRibbon";
+
 
 export default class About extends Component {
   render() {

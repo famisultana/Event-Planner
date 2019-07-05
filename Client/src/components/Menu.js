@@ -33,11 +33,11 @@ export default class Menu extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" s />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Link to="/">
-              <Nav.Link style={navLinks}>Home</Nav.Link>
-            </Link>
+            <Nav.Link style={navLinks} href="/">
+              Home
+            </Nav.Link>
 
-            <Nav.Link style={navLinks} href="#pricing">
+            <Nav.Link style={navLinks} href="/about">
               About
             </Nav.Link>
             {/* link tag will scroll it down to the section given name id */}
@@ -54,7 +54,7 @@ export default class Menu extends Component {
               </Nav.Link>
             </ScrollLink>
 
-            <Nav.Link style={navLinks} href="#pricing">
+            <Nav.Link style={navLinks} href="/contact">
               Contact
             </Nav.Link>
           </Nav>
