@@ -1,15 +1,29 @@
 import React, { Component } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import logo from "../images/emlogo.png";
-import { Link } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default class Menu extends Component {
+
+  componentDidMount(){
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.opacity = "0.7";
+    } else {
+      document.getElementById("navbar").style.opacity = "0.9";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+}
+
   render() {
     const navBar = {
       backgroundColor: "black",
-      opacity: 0.9,
-      height: "12vh"
+      opacity: 0.7,
+      height: "12vh",
+      width: '100%',
     };
 
     const navLinks = {
@@ -19,8 +33,9 @@ export default class Menu extends Component {
       color: "white"
     };
 
+
     return (
-      <Navbar
+      <Navbar id='navbar'
         sticky="top"
         collapseOnSelect
         expand="lg"

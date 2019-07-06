@@ -32,7 +32,6 @@ export default class ServiceItem extends Component {
         </Grid.Row>
       );
     }
-
     if (this.props.position === "left") {
       return (
         <Grid.Row className="service-block">
