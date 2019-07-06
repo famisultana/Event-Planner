@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Grid } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import Image from "react-bootstrap/Image";
 
 export default class ServiceItem extends Component {
   render() {
@@ -33,6 +32,7 @@ export default class ServiceItem extends Component {
         </Grid.Row>
       );
     }
+
     if (this.props.position === "left") {
       return (
         <Grid.Row className="service-block">

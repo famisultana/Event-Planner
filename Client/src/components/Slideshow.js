@@ -4,6 +4,7 @@ import img2 from "../images/2.jpg";
 import img3 from "../images/3.jpg";
 import { Fade } from "react-slideshow-image";
 import SlideshowItem from "./SlideshowItem";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const fadeImages = [img1, img2, img3];
 
@@ -17,7 +18,8 @@ const fadeProperties = {
 export default class Slideshow extends Component {
   render() {
     return (
-      <Fade className="slideshow" {...fadeProperties}>
+      <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut' offset='200' duration='20'>
+        <Fade className="slideshow" {...fadeProperties}>
         <SlideshowItem
           header="Welcome to Event Mania"
           image={fadeImages[0]}
@@ -37,6 +39,7 @@ export default class Slideshow extends Component {
                 button='Our Services'
         />
       </Fade>
+      </ScrollAnimation>
     );
   }
 }
