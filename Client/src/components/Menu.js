@@ -24,6 +24,8 @@ export default class Menu extends Component {
       opacity: 0.7,
       height: "12vh",
       width: '100%',
+      position: 'fixed',
+      zIndex: '12'
     };
 
     const navLinks = {
@@ -36,7 +38,6 @@ export default class Menu extends Component {
 
     return (
       <Navbar id='navbar'
-        sticky="top"
         collapseOnSelect
         expand="lg"
         variant="dark"

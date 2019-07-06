@@ -16,8 +16,8 @@ class About extends Component {
   render() {
     return (
       <div>
-        <Header image={img} title="About us" imgheight="300px" />
-        <hr />
+        <Header image={img} imgheight="300px" />
+        <MainHeading text="About Us" />
         <Grid className="services-row">
           <ServiceItem
             position="right"

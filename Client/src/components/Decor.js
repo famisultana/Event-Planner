@@ -2,6 +2,8 @@ import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import images from "./images";
+import { Header } from "semantic-ui-react";
+import image from '../images/decor.jpg'
 
 const photos = [
     {
@@ -58,6 +60,7 @@ function Decor() {
   
     return (
       <div>
+        
         <Gallery photos={photos} onClick={openLightbox} />
         <ModalGateway>
           {viewerIsOpen ? (

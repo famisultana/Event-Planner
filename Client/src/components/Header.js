@@ -6,12 +6,12 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <Card className="bg-dark text-white">
+        <Card className="bg-dark text-white image-header" >
           <Card.Img
             src={this.props.image}
             alt="Card image"
             style={{
-              height: this.props.imgheight ? this.props.imgheight : "200px"
+              height: "200px"
             }}
           />
           <Card.ImgOverlay>
