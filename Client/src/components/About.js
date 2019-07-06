@@ -3,7 +3,9 @@ import Header from "./Header";
 import img from "../images/1.jpg";
 import { Grid } from "semantic-ui-react";
 import ServiceItem from "./ServiceItem";
-
+import { Container } from "semantic-ui-react";
+import MainHeading from "./MainHeading";
+import TeamMember from "./TeamMember";
 // IMAGES
 import img1 from "../images/services1.jpg";
 import img2 from "../images/services2.jpg";
@@ -37,7 +39,23 @@ class About extends Component {
             content="We provide rental services such as marquee/tent, ,furniture, LED lights etc. Decor services are available as well. Please contact our Event Managers for further details."
           />
         </Grid>
-        <div className="services" />
+
+        {/* CODE FOR ---OUR TEAM SECTION --  */}
+        <hr />
+        <MainHeading text="Know Our Team" />
+        <Container fluid style={{ paddingTop: "10px", paddingBottom: "10px" }}>
+          <Grid className="category-row" columns={2}>
+            <TeamMember
+              img=""
+              position="Marketing manager"
+              name="Hassan Raza"
+            />
+            <TeamMember img="" position="Developer" name="Fami Sultana" />
+            <TeamMember img="" position="CEO" name="Hassan Raza" />
+            <TeamMember img="" position="peon" name="Fatima " />
+          </Grid>
+        </Container>
+        <br />
       </div>
     );
   }
